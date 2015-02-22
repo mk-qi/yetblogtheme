@@ -9,52 +9,17 @@
     Text Domain: blogtheme
     License: none (public domain)
 */
-/**
- * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
- * http://cssreset.com
- */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
 
-ol, ul {
-  list-style: none;
+@font-face {
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-weight: normal;
+    src: url("fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), 
+		 url("fonts/fontawesome-webfont.woff") format("woff"), 
+		 url("fonts/fontawesome-webfont.ttf") format("truetype"), 
+		 url("fonts/fontawesome-webfont.svgz#FontAwesomeRegular") format("svg"), 
+		 url("fonts/fontawesome-webfont.svg#FontAwesomeRegular") format("svg");
 }
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/*end css rest 2.0 */
-
 html {
   background: #6C7989;
   background: #6c7989 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6c7989), color-stop(100%, #434b55)) fixed;
@@ -76,6 +41,7 @@ body {
   color:#444;
   font-weight:400;
 }
+
 
 .wrapper {
   width:860px;
