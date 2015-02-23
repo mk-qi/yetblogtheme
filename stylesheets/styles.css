@@ -11,15 +11,7 @@
 */
 
 html {
-  background: #6C7989;
-  background: #6c7989 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6c7989), color-stop(100%, #434b55)) fixed;
-  background: #6c7989 -webkit-linear-gradient(#6c7989, #434b55) fixed;
-  background: #6c7989 -moz-linear-gradient(#6c7989, #434b55) fixed;
-  background: #6c7989 -o-linear-gradient(#6c7989, #434b55) fixed;
-  background: #6c7989 -ms-linear-gradient(#6c7989, #434b55) fixed;
-  background: #6c7989 linear-gradient(#6c7989, #434b55) fixed;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-text-shadow: rgba(255,255,255,0.01) 0 0 1px;
+
   text-rendering: optimizeLegibility;
 }
 
@@ -35,13 +27,13 @@ body {
 
 .wrapper {
   width:660px;
-  background:none repeat scroll 0 0 #fff;
   margin: 0 auto;
   padding:0px;
+  border-radius:2px;
 }
 
 
-.box {padding:0px;border: 1px solid #fff; }
+.box {padding:15px; }
 .background{background:none repeat scroll 0 0 #fff;}
 .bfix{margin:10px;}
 
@@ -50,16 +42,27 @@ body {
 header
 {
   margin:0px;  
-  padding:30px 30px 10px 30px;
-
+  border-bottom:1px solid;
+  
 }
 
+header .sitetitle {
+	float:left;
+	width:150px;
+}
+header .navbar {
+	text-align:right;
+	display: table;
+	padding-left:279px;
+	
+}
+header .navbar  span {
+	padding-left:20px;	
+	
+}
 header h1
 {
-  width:300px;
   margin:0px;
-  font-size:2em;
-  line-height:45px;
 }
 
 header p
@@ -71,80 +74,9 @@ header p
   padding:0px 0 0 25px;
 }
 
-header .search {
-  width:200px;
-  float:right;
-  position:relative;
-  bottom:40px;
-  padding:0px;
-  right:0px;
-  height:20px;
-}
-
-header nav
-{
-  margin-left:12px;
-  background:transparent;
-  margin:0px;
-  padding: 18px 0px  0px 0px;
-  width:580px;
-}
-
-header nav ul
-{
-  list-style:none outside none;
-  padding:0 10px;
-}
-header nav ul li
-{
-  float: left;
-  text-transform:uppercase;
-}
-
-header nav ul li a
-{
-  float:left;
-  background:#E5ECF9;
-  letter-spacing:1px;
-  color:#333!important;
-  margin:0 3px 0 0;
-}
-
-header nav ul li a span
-{
-  float:left;
-  display:block;
-  background:transparent;
-  padding:4px 6px 2px;
-}
-
-header nav ul li a:hover
-{
-  background-color:#C3D9FF;
-}
-
-header nav .line
-{
-  clear:both;
-  width:580px;
-  height:8px;
-  line-height:8px;
-  background:#C3D9FF;
-  border-top:1px solid #fff;
-  padding:0;
-}
-
-#content
-{
-  padding:0 26px;
-}
 article
 {
   float:left;
-  padding:0 15px 0 0px;
-  font-weight: normal;
-  line-height:1.4;
-  font-size:14px;
  
 }
 
@@ -165,101 +97,16 @@ article li
   margin:0 -5px 0 12px;
 }
 
-.title {
-  font-size:20px;
-  padding:10px 0px;
-}
-aside
-{
-  float:left;
-  width:220px;
-  _padding:12px 0 0 10px;
-  margin:3px 0;
-  padding:12px 0 0 10px;
-  font-size: 12px;
-}
-aside h2
-{
-  font-size:1em;
-  line-height:1em;
-  font-family:Georgia,serif;
-  color:#000;
-  background:#EEE;
-  margin:0px 0 10px;
-}
-
-aside h2 em
-{
-  display:block;
-  font-style:normal;
-  padding:5px 10px;
-}
-
-aside ul,aside ol
-{
-  line-height:18px;
-  margin:0 0 0 1.4em;
-  padding:0 0 6px;
-}
-
-aside ul ul,aside ol ol
-{
-  padding:0;
-}
-aside ul li
-{
-  list-style:disc outside none;
-  padding-bottom:2px;
-  border-bottom:1px solid;
-  border-bottom-color:#F0F0F0;
-  margin:2px 0 0 10px;
-}
-
-aside li a
-{
-  height:1%;
-  padding:1px 0;
-}
-
-aside ul.pages li ul,aside ul.categories li ul,aside ul li.cat-item ul
-{
-  margin:0;
-}
-
-aside ul.pages li li,aside ul li.page_item li.page_item,aside ul.categories li li,aside ul li.cat-item li.cat-item
-{
-  margin-left:10px;
-  border-bottom:none;
-  padding:0;
-}
-
-aside ul.pages li ul ul,aside ul.categories li ul ul,aside ul li.cat-item ul ul
-{
-  margin:0 0 0 16px;
-}
-
-aside #wp-calendar table tfoot #prev a
-{
-  text-align:left;
-}
-
-aside #wp-calendar table tfoot #next a
-{
-  text-align:right;
-}
-
-
-
 footer
 {
   clear:both;
   height:50px;
-  border-top:2px solid #BBD0F9;
+  border-top:1px solid;
   color:#000;
   font-size:14px;
   text-align:center;
   padding:6px 0;
-  line-height: 40px;
+  line-height: 50px;
 }
 
 footer span
@@ -273,10 +120,7 @@ footer span #rss
   float:right;
 }
 
-.line
-{
-  border-top:2px solid #BBD0F9;
-}
+
 
 a {
   text-decoration: none;
