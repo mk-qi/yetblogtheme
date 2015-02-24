@@ -26,10 +26,11 @@ body {
 
 
 .wrapper {
-  width:660px;
+  width:auto;
   margin: 0 auto;
   padding:0px;
   border-radius:2px;
+  max-width:780px;
 }
 
 
@@ -43,35 +44,37 @@ header
 {
   margin:0px;  
   border-bottom:1px solid;
+  height:45px;
   
 }
 
 header .sitetitle {
 	float:left;
-	width:150px;
 }
 header .navbar {
 	text-align:right;
-	display: table;
-	padding-left:279px;
+	float:right;
+	padding:0px;
+	line-height:50px;
 	
 }
 header .navbar  span {
-	padding-left:20px;	
+	padding-right:10px;	
 	
+}
+header .navbar .itme3{
+	padding-right:0px;	
 }
 header h1
 {
   margin:0px;
+  font-size:1.90em;
 }
 
 header p
 {
   font-size:14px;
-  width:600px;
-  width:300px;
   margin:0px 0;
-  padding:0px 0 0 25px;
 }
 
 article
