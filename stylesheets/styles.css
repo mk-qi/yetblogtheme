@@ -26,7 +26,7 @@ body {
 
 
 .wrapper {
-  width:660px;
+  width:960px;
   margin: 0 auto;
   padding:0px;
   border-radius:2px;
@@ -39,45 +39,38 @@ body {
 
 
 /*layout -- */
-header
-{
-  margin:0px;  
-  border-bottom:1px solid;
-  
+.sitedesc{
+    float:left;
+    width:240px;
+    padding:12px 12px 0 10px;
+    font-size: 12px;
+    position:fixed;
 }
 
-header .sitetitle {
-	float:left;
-	width:150px;
-}
-header .navbar {
-	text-align:right;
-	display: table;
-	padding-left:279px;
+
+.sitetitle {
+	text-align:center;
+	padding:20px;
 	
 }
-header .navbar  span {
+.navbar {
+	text-align:center;
+	
+}
+.navbar  span {
 	padding-left:20px;	
 	
 }
-header h1
-{
-  margin:0px;
-}
 
-header p
-{
-  font-size:14px;
-  width:600px;
-  width:300px;
-  margin:0px 0;
-  padding:0px 0 0 25px;
-}
 
+#contant
+{
+  float:right;
+  width:660px;
+}
 article
 {
-  float:left;
- 
+  
 }
 
 article p
@@ -90,12 +83,51 @@ article p
   font-variant: normal;
 }
 
-article li
-{
-  padding-left:2px;
-  font-size:12px;
-  margin:0 -5px 0 12px;
+
+
+aside{
+	
 }
+aside h2
+{
+  font-size:1em;
+  line-height:1em;
+  font-family:Georgia,serif;
+  color:#000;
+  background:#EEE;
+  margin:0px 0 10px;
+}
+
+aside h2 em
+{
+  display:block;
+  font-style:normal;
+  padding:5px 10px;
+}
+
+aside ul,aside ol
+{
+  line-height:18px;
+  margin:0 0 0 1.4em;
+  padding:0 0 6px;
+}
+
+
+aside ul li
+{
+  list-style:disc outside none;
+  padding-bottom:2px;
+  border-bottom:1px solid;
+  border-bottom-color:#F0F0F0;
+  margin:2px 0 0 10px;
+}
+
+
+
+
+
+
+
 
 footer
 {
