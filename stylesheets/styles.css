@@ -10,16 +10,6 @@
     License: none (public domain)
 */
 
-@font-face {
-    font-family: "FontAwesome";
-    font-style: normal;
-    font-weight: normal;
-    src: url("fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), 
-		 url("fonts/fontawesome-webfont.woff") format("woff"), 
-		 url("fonts/fontawesome-webfont.ttf") format("truetype"), 
-		 url("fonts/fontawesome-webfont.svgz#FontAwesomeRegular") format("svg"), 
-		 url("fonts/fontawesome-webfont.svg#FontAwesomeRegular") format("svg");
-}
 html {
   background: #6C7989;
   background: #6c7989 -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6c7989), color-stop(100%, #434b55)) fixed;
